@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.11.6)  1 AUG 2023 15:12
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.11.6)  1 AUG 2023 15:25
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -346,12 +346,35 @@ Package: fontspec-luatex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTe
  (/home/philipp/.local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 ) (/home/philipp/.local/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+luaotfload | cache : Lookup cache loaded from /home/philipp/.local/texlive/2021/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
+luaotfload | aux : font no 26 (nil) defines no feature for script latn
+luaotfload | aux : font no 26 (nil) defines no feature for script dflt
+
+Package fontspec Info: Font family 'Arial(0)' created for font 'Arial' with
+(fontspec)             options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"Arial:mode=node;language=dflt;+tlig;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"Arial/B:mode=node;language=dflt;+tlig;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"Arial/I:mode=node;language=dflt;+tlig;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"Arial/BI:mode=node;language=dflt;+tlig;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 10
 (typearea)             BCOR = 0.0pt
 (typearea)             \paperwidth      = 597.50793pt
 (typearea)              \textwidth      = 418.25555pt
-(typearea)              DIV departure   = -6%
+(typearea)              DIV departure   = -7%
 (typearea)              \evensidemargin = 17.3562pt
 (typearea)              \oddsidemargin  = 17.3562pt
 (typearea)             \paperheight     = 845.04694pt
@@ -362,7 +385,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 32.
+(typearea)              on input line 33.
  (/home/philipp/.local/texlive/2021/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2021/10/19 3.65 The Babel package
  (/home/philipp/.local/texlive/2021/texmf-dist/tex/generic/babel/luababel.def
@@ -486,7 +509,6 @@ Lua module: lualatex-math 2013/08/03 1.3 Patches for mathematics typesetting wit
 \l__um_primecount_int=\count289
 \g__um_primekern_muskip=\muskip17
  (/home/philipp/.local/texlive/2021/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex)))
-luaotfload | cache : Lookup cache loaded from /home/philipp/.local/texlive/2021/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
 
 Package fontspec Info: Could not resolve font "LatinModernMath/B" (it probably
 (fontspec)             doesn't exist).
@@ -529,13 +551,13 @@ Package fontspec Info: Font family 'LatinModernMath(1)' created for font
 (fontspec)             \__um_luatex_copy_fontdimens: 
 
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 54.
+(Font)              `operators' in the math version `normal' on input line 55.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/LatinModernMath(1)/m/n on input line 54.
+(Font)                  OT1/cmr/m/n --> TU/LatinModernMath(1)/m/n on input line 55.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 54.
+(Font)              `operators' in the math version `bold' on input line 55.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/LatinModernMath(1)/b/n on input line 54.
+(Font)                  OT1/cmr/bx/n --> TU/LatinModernMath(1)/b/n on input line 55.
 
 Package fontspec Info: LatinModernMath scale = 1.0001.
 
@@ -591,13 +613,13 @@ Package fontspec Info: Font family 'LatinModernMath(2)' created for font
 (fontspec)             \fontdimen 21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 54.
+(Font)              `symbols' in the math version `normal' on input line 55.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> TU/LatinModernMath(2)/m/n on input line 54.
+(Font)                  OMS/cmsy/m/n --> TU/LatinModernMath(2)/m/n on input line 55.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 54.
+(Font)              `symbols' in the math version `bold' on input line 55.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> TU/LatinModernMath(2)/b/n on input line 54.
+(Font)                  OMS/cmsy/b/n --> TU/LatinModernMath(2)/b/n on input line 55.
 
 Package fontspec Info: LatinModernMath scale = 0.9999.
 
@@ -641,30 +663,30 @@ Package fontspec Info: Font family 'LatinModernMath(3)' created for font
 (fontspec)             \fontdimen 13\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 54.
+(Font)              `largesymbols' in the math version `normal' on input line 55.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> TU/LatinModernMath(3)/m/n on input line 54.
+(Font)                  OMX/cmex/m/n --> TU/LatinModernMath(3)/m/n on input line 55.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 54.
+(Font)              `largesymbols' in the math version `bold' on input line 55.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> TU/LatinModernMath(3)/b/n on input line 54.
+(Font)                  OMX/cmex/m/n --> TU/LatinModernMath(3)/b/n on input line 55.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 10.95116pt on input line 54.
+(Font)              scaled to size 10.95116pt on input line 55.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 7.6658pt on input line 54.
+(Font)              scaled to size 7.6658pt on input line 55.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.47559pt on input line 54.
+(Font)              scaled to size 5.47559pt on input line 55.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 10.94882pt on input line 54.
+(Font)              scaled to size 10.94882pt on input line 55.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 7.66417pt on input line 54.
+(Font)              scaled to size 7.66417pt on input line 55.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 5.47441pt on input line 54.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
+(Font)              scaled to size 5.47441pt on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
  (/home/philipp/.local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 54.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
  (/home/philipp/.local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -692,9 +714,9 @@ Package fontspec Info: Font family 'XITSMath(0)' created for font 'XITS Math'
 
 \sym__um_fam1=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `normal'
-(Font)                  TU/XITSMath(0)/m/n --> TU/XITSMath(0)/m/n on input line 55.
+(Font)                  TU/XITSMath(0)/m/n --> TU/XITSMath(0)/m/n on input line 56.
 LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `bold'
-(Font)                  TU/XITSMath(0)/m/n --> TU/XITSMath(0)/b/n on input line 55.
+(Font)                  TU/XITSMath(0)/m/n --> TU/XITSMath(0)/b/n on input line 56.
 
 Package fontspec Info: Font family 'XITSMath(1)' created for font 'XITS Math'
 (fontspec)             with options
@@ -719,9 +741,9 @@ Package fontspec Info: Font family 'XITSMath(1)' created for font 'XITS Math'
 
 \sym__um_fam2=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `__um_fam2' in version `normal'
-(Font)                  TU/XITSMath(1)/m/n --> TU/XITSMath(1)/m/n on input line 56.
+(Font)                  TU/XITSMath(1)/m/n --> TU/XITSMath(1)/m/n on input line 57.
 LaTeX Font Info:    Overwriting symbol font `__um_fam2' in version `bold'
-(Font)                  TU/XITSMath(1)/m/n --> TU/XITSMath(1)/b/n on input line 56.
+(Font)                  TU/XITSMath(1)/m/n --> TU/XITSMath(1)/b/n on input line 57.
  (/home/philipp/.local/texlive/2021/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2021-11-03 v3.0.35 A comprehensive (SI) units package
 \l__siunitx_angle_tmp_dim=\dimen169
@@ -835,7 +857,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks28
 \@floatcapt=\box70
 )
-Package scrhack Info: loading float hack on input line 80.
+Package scrhack Info: loading float hack on input line 81.
  (/home/philipp/.local/texlive/2021/texmf-dist/tex/latex/koma-script/float.hak
 File: float.hak 2021/06/25 v3.34 KOMA-Script scrhack part (hacking package float)
 Package scrhack Info: redefining \newfloat on input line 163.
@@ -1133,7 +1155,7 @@ File: biblatex.cfg
 ))
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
-(scrhack)             need that hack, on input line 127.
+(scrhack)             need that hack, on input line 128.
  (/home/philipp/.local/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
  (/home/philipp/.local/texlive/2021/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
@@ -1233,7 +1255,7 @@ Package: longtable 2021-05-07 v4.16 Multi-page Table package (DPC)
 \c@LT@chunks=\count461
 \LT@p@ftn=\toks30
 )
-Class scrartcl Info: longtable captions redefined on input line 133.
+Class scrartcl Info: longtable captions redefined on input line 134.
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1280,19 +1302,19 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  TU/LatinModernMath(1)/m/n --> TU/lmr/m/n on input line 6.
+(Font)                  TU/LatinModernMath(1)/m/n --> TU/Arial(0)/m/n on input line 6.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 6.
+(Font)                  OT1/cmr/m/it --> TU/Arial(0)/m/it on input line 6.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 6.
+(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/b/n on input line 6.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 6.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 6.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 6.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 6.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 6.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 6.
  (/home/philipp/.local/texlive/2021/texmf-dist/tex/latex/translations/translations-basic-dictionary-german.trsl
 File: translations-basic-dictionary-german.trsl (german translation file `translations-basic-dictionary')
 )
@@ -1322,9 +1344,10 @@ LaTeX Info: Redefining \showhyphens on input line 6.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of spacing.
 Package microtype Info: No adjustment of kerning.
- (/home/philipp/.local/texlive/2021/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
-File: mt-LatinModernRoman.cfg 2021/02/21 v1.1 microtype config. file: Latin Modern Roman (RS)
-)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `Arial' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
  (/home/philipp/.local/texlive/2021/texmf-dist/tex/latex/biblatex/lbx/ngerman.lbx
@@ -1425,19 +1448,19 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 37584 strings out of 478092
+ 37541 strings out of 478092
  100000,1977958 words of node,token memory allocated
  725 words of node memory still in use:
    8 hlist, 2 vlist, 2 rule, 1 local_par, 8 glue, 5 kern, 1 penalty, 3 glyph, 16 attribute, 77 glue_spec, 10 attribute_list, 1 write nodes
-   avail lists: 1:2,2:217,3:45,4:48,5:89,6:16,7:1035,8:13,9:146,10:4,11:96,12:1
- 56843 multiletter control sequences out of 65536+600000
- 88 fonts using 34136559 bytes
+   avail lists: 1:3,2:217,3:45,4:45,5:62,6:16,7:1025,8:13,9:146,10:4,11:96,12:1
+ 56807 multiletter control sequences out of 65536+600000
+ 99 fonts using 36484759 bytes
  113i,7n,117p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,80000s
-</home/philipp/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/philipp/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/philipp/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/philipp/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (3 pages, 16735 bytes).
+</usr/share/fonts/truetype/msttcorefonts/arial.ttf></home/philipp/.local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/fonts/truetype/msttcorefonts/Arial_Bold.ttf>
+Output written on main.pdf (3 pages, 42229 bytes).
 
-PDF statistics: 60 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+PDF statistics: 53 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  6 named destinations out of 1000 (max. 131072)
  9 words of extra memory for PDF output out of 10000 (max. 100000000)
 

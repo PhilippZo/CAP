@@ -206,6 +206,11 @@ INPUT /home/philipp/.local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
 INPUT /home/philipp/.local/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.cfg
 INPUT /home/philipp/.local/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.cfg
 INPUT /home/philipp/.local/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc
+INPUT /home/philipp/.local/texlive/2021/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc
+INPUT /home/philipp/.local/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/arial.luc
+INPUT /home/philipp/.local/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/arialbi.luc
+INPUT /home/philipp/.local/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/arial-bold.luc
+INPUT /home/philipp/.local/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/ariali.luc
 INPUT /home/philipp/.local/texlive/2021/texmf-dist/tex/generic/babel/babel.sty
 INPUT /home/philipp/.local/texlive/2021/texmf-dist/tex/generic/babel/babel.sty
 INPUT /home/philipp/.local/texlive/2021/texmf-dist/tex/generic/babel/babel.sty
@@ -236,7 +241,6 @@ INPUT /home/philipp/.local/texlive/2021/texmf-dist/tex/lualatex/lualatex-math/lu
 INPUT /home/philipp/.local/texlive/2021/texmf-dist/tex/lualatex/lualatex-math/lualatex-math.sty
 INPUT /home/philipp/.local/texlive/2021/texmf-dist/tex/lualatex/lualatex-math/lualatex-math.lua
 INPUT /home/philipp/.local/texlive/2021/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex
-INPUT /home/philipp/.local/texlive/2021/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc
 INPUT /home/philipp/.local/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/latinmodern-math.luc
 INPUT /home/philipp/.local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /home/philipp/.local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
@@ -418,8 +422,6 @@ INPUT /home/philipp/.local/texlive/2021/texmf-dist/tex/latex/translations/transl
 INPUT /home/philipp/.local/texlive/2021/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT /home/philipp/.local/texlive/2021/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT /home/philipp/.local/texlive/2021/texmf-dist/tex/latex/caption/ltcaption.sty
-INPUT /home/philipp/.local/texlive/2021/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
-INPUT /home/philipp/.local/texlive/2021/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
 INPUT /home/philipp/.local/texlive/2021/texmf-dist/tex/latex/biblatex/lbx/ngerman.lbx
 INPUT /home/philipp/.local/texlive/2021/texmf-dist/tex/latex/biblatex/lbx/ngerman.lbx
 INPUT /home/philipp/.local/texlive/2021/texmf-dist/tex/latex/biblatex/lbx/german.lbx
@@ -444,10 +446,8 @@ INPUT /home/philipp/.local/texlive/2021/texmf-dist/tex/generic/gettitlestring/ge
 INPUT /home/philipp/.local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /home/philipp/.local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 OUTPUT build/main.pdf
-INPUT /home/philipp/.local/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc
 INPUT /home/philipp/.local/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-regular.luc
 INPUT /home/philipp/.local/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-bold.luc
-INPUT /home/philipp/.local/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-regular.luc
 INPUT /home/philipp/.local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /home/philipp/.local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /home/philipp/.local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
