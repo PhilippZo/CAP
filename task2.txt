@@ -4,17 +4,19 @@
 b:Gr/Enable = "False"
 #Ts/UseQT = "True"
 #b:Ts/PauseBeforeSequence = "True"
-b:Ts/PauseBeforeQuit = "True"
+#b:Ts/PauseBeforeQuit = "True"
 i:Ts/Seed = 1
 i:Ts/MaxInterruptedHistories = 1000000
-i:Ts/ShowHistoryCountAtInterval = 1000
-i:Ts/NumberOfThreads = 0
+i:Ts/ShowHistoryCountAtInterval = 1 
+i:Ts/NumberOfThreads = 1
 
 
 #PHYSIC MODULS
 #sv:Ph/Default/Modules = 1 "Transportation_Only"
 sv:Ph/Default/Modules = 1 "g4em-standard_opt0"
-
+d:Ph/Default/CutForAllParticles = 0.2 mm 
+d:Ph/Default/EMRangeMin = 100. eV 
+i:Ph/Default/EMBins = 77
 
 #World 
 s:Ge/World/Material    = "Vacuum"
@@ -62,14 +64,14 @@ s:Gr/BasicViewA/Projection       = "Perspective"
 d:Gr/BasicViewA/PerspectiveAngle = 30 deg
 u:Gr/BasicViewA/Zoom             = 3
 
-i:Gr/ShowOnlyOutlineIfVoxelCountExceeds = 1000000000
+i:Gr/ShowOnlyOutlineIfVoxelCountExceeds = 500000000
 
 
 #Source
 s:So/Example/Type                     = "Beam"
 s:So/Example/Component                = "BeamPosition"
 s:So/Example/BeamParticle             = "proton"
-d:So/Example/BeamEnergy               =  60 MeV
+d:So/Example/BeamEnergy               =  100 MeV
 u:So/Example/BeamEnergySpread         = 0.757504
 s:So/Example/BeamPositionDistribution = "Gaussian"
 s:So/Example/BeamPositionCutoffShape  = "Ellipse"
@@ -82,7 +84,7 @@ d:So/Example/BeamAngularCutoffX       = 90. deg
 d:So/Example/BeamAngularCutoffY       = 90. deg
 d:So/Example/BeamAngularSpreadX       = 0.0032 rad
 d:So/Example/BeamAngularSpreadY       = 0.0032 rad
-i:So/Example/NumberOfHistoriesInRun   = 600000
+i:So/Example/NumberOfHistoriesInRun   = 1000000
 
 s:Ge/BeamPosition/Parent="World"
 s:Ge/BeamPosition/Type="Group"
@@ -102,46 +104,46 @@ s:Sc/DoseCTV/Component                 = "Patient"
 s:Sc/DoseCTV/IfOutputFileAlreadyExists = "Overwrite"
 #s:Sc/DoseCTV/OutputType                = "dicom"
 #s:Sc/DoseCTV/OutputType                = "csv"
-#sv:Sc/DoseCTV/OnlyIncludeIfInRTStructure = 1 "CTV_Zylinder"
+sv:Sc/DoseCTV/OnlyIncludeIfInRTStructure = 1 "CTV_Zylinder" 
 sv:Sc/DoseCTV/Report                   =  2 "Sum" "CumulativeVolumeHistogram"
 i:Sc/DoseCTV/HistogramBins             = 100
 d:Sc/DoseCTV/HistogramMin              = 0. Gy
-d:Sc/DoseCTV/HistogramMax              = .0000000001 Gy
+d:Sc/DoseCTV/HistogramMax              = .000001 Gy
 
 
 
 #Scorer 2: OAR1
-#s:Sc/DoseOAR1/Quantity                  = "DoseToMedium"
-#s:Sc/DoseOAR1/Component                 = "Patient"
-#s:Sc/DoseOAR1/IfOutputFileAlreadyExists = "Overwrite"
-#s:Sc/DoseOAR1/OutputType                = "csv"
-#sv:Sc/DoseOAR1/OnlyIncludeIfInRTStructure = 1 "OAR1"   
-#sv:Sc/DoseOAR1/Report                   = 1 "DifferentialVolumeHistogram"
-#i:Sc/DoseOAR1/HistogramBins             = 100
-#d:Sc/DoseOAR1/HistogramMin              = 0. Gy
-#d:Sc/DoseOAR1/HistogramMax              = 100 Gy
+s:Sc/DoseOAR1/Quantity                  = "DoseToMedium"
+s:Sc/DoseOAR1/Component                 = "Patient"
+s:Sc/DoseOAR1/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/DoseOAR1/OutputType                = "csv"
+sv:Sc/DoseOAR1/OnlyIncludeIfInRTStructure = 1 "OAR1"   
+sv:Sc/DoseOAR1/Report                   = 2 "Sum" "CumulativeVolumeHistogram"
+i:Sc/DoseOAR1/HistogramBins             = 100
+d:Sc/DoseOAR1/HistogramMin              = 0. Gy
+d:Sc/DoseOAR1/HistogramMax              = .000001 Gy
 
 #Scorer 3: OAR2
-#s:Sc/DoseOAR2/Quantity                  = "DoseToMedium"
-#s:Sc/DoseOAR2/Component                 = "Patient"
-#s:Sc/DoseOAR2/IfOutputFileAlreadyExists = "Overwrite"
-#s:Sc/DoseOAR2/OutputType                = "csv"
-#sv:Sc/DoseOAR2/OnlyIncludeIfInRTStructure = 1 "OAR2"
-#sv:Sc/DoseOAR2/Report                   = 1 "DifferentialVolumeHistogram"
-#i:Sc/DoseOAR2/HistogramBins             = 100
-#d:Sc/DoseOAR2/HistogramMin              = 0. Gy
-#d:Sc/DoseOAR2/HistogramMax              = 100 Gy
+s:Sc/DoseOAR2/Quantity                  = "DoseToMedium"
+s:Sc/DoseOAR2/Component                 = "Patient"
+s:Sc/DoseOAR2/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/DoseOAR2/OutputType                = "csv"
+sv:Sc/DoseOAR2/OnlyIncludeIfInRTStructure = 1 "OAR2"
+sv:Sc/DoseOAR2/Report                   = 2 "Sum" "CumulativeVolumeHistogram"
+i:Sc/DoseOAR2/HistogramBins             = 100
+d:Sc/DoseOAR2/HistogramMin              = 0. Gy
+d:Sc/DoseOAR2/HistogramMax              =  .000001 Gy
 
 #Scorer 4: External
-#s:Sc/DoseEx/Quantity                  = "DoseToMedium"
-#s:Sc/DoseEx/Component                 = "Patient"
-#s:Sc/DoseEx/IfOutputFileAlreadyExists = "Overwrite"
-#s:Sc/DoseEx/OutputType                = "csv"
-#sv:Sc/DoseEx/OnlyIncludeIfInRTStructure = 1 "External"
-#sv:Sc/DoseEx/Report                   = 1 "DifferentialVolumeHistogram"
-#i:Sc/DoseEx/HistogramBins             = 100
-#d:Sc/DoseEx/HistogramMin              = 0. Gy
-#d:Sc/DoseEx/HistogramMax              = .000000001 Gy
+s:Sc/DoseEx/Quantity                  = "DoseToMedium"
+s:Sc/DoseEx/Component                 = "Patient"
+s:Sc/DoseEx/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/DoseEx/OutputType                = "csv"
+sv:Sc/DoseEx/OnlyIncludeIfInRTStructure = 1 "External"
+sv:Sc/DoseEx/Report                   = 2 "Sum" "CumulativeVolumeHistogram"
+i:Sc/DoseEx/HistogramBins             = 100
+d:Sc/DoseEx/HistogramMin              = 0. Gy
+d:Sc/DoseEx/HistogramMax              = .000001 Gy
 
 
 
