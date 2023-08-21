@@ -7,7 +7,7 @@ b:Gr/Enable = "False"
 #b:Ts/PauseBeforeQuit = "True"
 i:Ts/Seed = 1
 i:Ts/MaxInterruptedHistories = 1000000
-i:Ts/ShowHistoryCountAtInterval = 10000 
+i:Ts/ShowHistoryCountAtInterval = 20000 
 i:Ts/NumberOfThreads = 0
 
 
@@ -75,10 +75,10 @@ d:So/Example/BeamEnergy               =  300 MeV
 u:So/Example/BeamEnergySpread         = 0.757504
 s:So/Example/BeamPositionDistribution = "Gaussian"
 s:So/Example/BeamPositionCutoffShape  = "Ellipse"
-d:So/Example/BeamPositionCutoffX      = 60. cm
-d:So/Example/BeamPositionCutoffY      = 60. cm
-d:So/Example/BeamPositionSpreadX      = 0.2 cm
-d:So/Example/BeamPositionSpreadY      = 0.2 cm
+d:So/Example/BeamPositionCutoffX      = 10. cm
+d:So/Example/BeamPositionCutoffY      = 10. cm
+d:So/Example/BeamPositionSpreadX      = 2 cm
+d:So/Example/BeamPositionSpreadY      = 2 cm
 s:So/Example/BeamAngularDistribution  = "Gaussian"
 d:So/Example/BeamAngularCutoffX       = 90. deg
 d:So/Example/BeamAngularCutoffY       = 90. deg

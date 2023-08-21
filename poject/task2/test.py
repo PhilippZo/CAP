@@ -18,7 +18,7 @@ print(np.max(dcm_data.pixel_array[:]))
 #dcm_data.pixel_array[:] = dcm_data.pixel_array * scaling_factor
 
 # Adjust the DoseGridScaling value
-dcm_data.DoseGridScaling = dcm_data.DoseGridScaling * 100000
+dcm_data.DoseGridScaling = dcm_data.DoseGridScaling * 5000000
 
 print("Dose Scaling: ", dcm_data.DoseGridScaling)
 
@@ -26,6 +26,6 @@ print("Dose Scaling: ", dcm_data.DoseGridScaling)
 dcm_data.add_new((0x3004, 0x0002), 'CS', 'GY')
 
 # Save the modified DICOM to a new file
-dcm_data.save_as('Dose.dcm')
+dcm_data.save_as('../../data/CT/DicomDaten/Dose.dcm')
 
 
