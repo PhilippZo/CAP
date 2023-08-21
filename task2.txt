@@ -66,22 +66,13 @@ u:Gr/BasicViewA/Zoom             = 3
 
 i:Gr/ShowOnlyOutlineIfVoxelCountExceeds = 500000000
 
-
-#include Time featur for moving source
-#s:Tf/Move/Function = "Linear cm"
-#d:Tf/Move/Rate = 1  cm/ms
-#d:Tf/Move/StartValue = 0. cm
-#d:Tf/Move/RepetitionInterval = 5. ms
-
 s:Tf/Move/Function = "Step"
-dv:Tf/Move/Times = 4 2.5 5 7.5 10 ms
-dv:Tf/Move/Values = 4 0 3 0 3 cm
-
-
+dv:Tf/Move/Times = 0 1 2 3 4 5 6 7 ms
+dv:Tf/Move/Values = -0.15 -0.075 0 0.075 0.15 0.075 0 -0.075 cm
 
 s:Tf/Move2/Function = "Step"
-dv:Tf/Move2/Times = 2 5 10 ms
-dv:Tf/Move2/Values = 2 -2 2 cm
+dv:Tf/Move2/Times = 0 1 2 3 4 5 6 7 ms
+dv:Tf/Move2/Values = 0 0.075 0.15 0.075 0 -0.075 -0.15 -0.075 cm
 
 d:Tf/TimelineStart = 0. ms
 d:Tf/TimelineEnd = 10. ms
