@@ -19,6 +19,9 @@ ax.axvline(x = 15, alpha = 0.5, color = "black", linestyle = "--")
 ax.axhline(y = 10, alpha = 0.5, color = "black", linestyle = "--")
 #ax.plot(60*0.95, alpha = 0.5, color = "black", linestyle = "--" , label = "95% of wanted Dose")
 
+ax.set_xlabel("Dose [Gy]")
+ax.set_ylabel("relativ Volume")
+
 plt.title("Dose Volume Histogram")
 plt.grid()
 plt.legend()

@@ -79,7 +79,10 @@ for i in range(0,7):
 #relative energie breite errechnet durch: fehler auf energy *2 / energy in prozent 
 
 plt.axhline(y = 0.8 , linestyle  = '--', color = "k")
-#plt.legend()
-#plt.show()
+plt.title("TDK als Verhätnis der maximal Dosis")
+plt.xlabel("Tiefe [cm]")
+plt.ylabel("Verhätnis Dosis")
 
+plt.legend()
+plt.savefig("task1b.pdf")
 
