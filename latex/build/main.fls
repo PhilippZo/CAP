@@ -505,6 +505,11 @@ INPUT ./content/iso.png
 INPUT ./content/slicer.png
 INPUT ./content/slicer.png
 INPUT ./content/slicer.png
+INPUT ./content/task3.tex
+INPUT ./content/task3.tex
+INPUT ./content/DVH.pdf
+INPUT ./content/DVH.pdf
+INPUT ./content/DVH.pdf
 INPUT /home/philipp/.texlive2022/texmf-var/luatex-cache/generic/fonts/otl/lmroman17-regular.luc
 INPUT ./content/app.tex
 INPUT ./content/app.tex
