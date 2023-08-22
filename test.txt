@@ -1,2 +1,94 @@
-test
+#task 2 file for topas 
 
+#DEFAULTS
+#b:Gr/Enable = "False"
+Ts/UseQT = "True"
+#b:Ts/PauseBeforeSequence = "True"
+b:Ts/PauseBeforeQuit = "True"
+i:Ts/Seed = 1
+i:Ts/MaxInterruptedHistories = 1000000
+i:Ts/ShowHistoryCountAtInterval = 20000 
+i:Ts/NumberOfThreads = 0
+
+
+#PHYSIC MODULS
+sv:Ph/Default/Modules = 1 "Transportation_Only"
+#sv:Ph/Default/Modules = 1 "g4em-standard_opt0"
+d:Ph/Default/CutForAllParticles = 0.1 mm 
+d:Ph/Default/EMRangeMin = 100. eV 
+i:Ph/Default/EMBins = 77
+
+#World 
+s:Ge/World/Material    = "Vacuum"
+d:Ge/World/HLX         = 1 m
+d:Ge/World/HLY         = 1 m
+d:Ge/World/HLZ         = 1 m
+
+
+#loading DICOM patient 
+
+#includeFile = HUtoMaterialSchneider.txt
+#s:Ge/Patient/Parent   = "World"
+#s:Ge/Patient/Material = "G4_WATER"
+#s:Ge/Patient/Type           = "TsDicomPatient"
+#s:Ge/Patient/DicomDirectory = "data/CT/DicomDaten"
+#sv:Ge/Patient/DicomModalityTags = 1 "CT"
+
+
+
+#sv:Ge/Patient/ColorByRTStructNames = 4 "CTV_Zylinder" "OAR1" "OAR2" "External"
+#sv:Ge/Patient/ColorByRTStructColors = 4 "blue" "red" "red" "green"
+
+#i:Ge/Patient/RestrictVoxelsXMin = 300
+#i:Ge/Patient/RestrictVoxelsYMin = 300
+#i:Ge/Patient/RestrictVoxelsXMax = 400
+#i:Ge/Patient/RestrictVoxelsYMax = 400
+#i:Ge/Patient/RestrictVoxelsZMin = 300
+#i:Ge/Patient/RestrictVoxelsZMax = 400
+
+
+#iv:Ge/Patient/ShowSpecificSlicesX = 1 -1
+#iv:Ge/Patient/ShowSpecificSlicesY = 1 -1
+#iv:Ge/Patient/ShowSpecificSlicesZ = 1 30
+
+
+
+#Basic graphics for future projects
+s:Gr/BasicViewA/Type             = "OpenGL"
+i:Gr/BasicViewA/WindowSizeX      = 1024
+i:Gr/BasicViewA/WindowSizeY      = 768
+b:Gr/BasicViewA/IncludeAxes      = "True"
+d:Gr/BasicViewA/Theta            = 55 deg
+d:Gr/BasicViewA/Phi              = 20 deg
+s:Gr/BasicViewA/Projection       = "Perspective"
+d:Gr/BasicViewA/PerspectiveAngle = 30 deg
+u:Gr/BasicViewA/Zoom             = 3
+
+
+#Source
+s:So/Example/Type                     = "Beam"
+s:So/Example/Component                = "BeamPosition"
+s:So/Example/BeamParticle             = "proton"
+d:So/Example/BeamEnergy               =  150 MeV
+u:So/Example/BeamEnergySpread         = 0.757504
+s:So/Example/BeamPositionDistribution = "Gaussian"
+s:So/Example/BeamPositionCutoffShape  = "Ellipse"
+d:So/Example/BeamPositionCutoffX      = 1. cm
+d:So/Example/BeamPositionCutoffY      = 1. cm
+d:So/Example/BeamPositionSpreadX      = 50. cm
+d:So/Example/BeamPositionSpreadY      = 50. cm
+s:So/Example/BeamAngularDistribution  = "Gaussian"
+d:So/Example/BeamAngularCutoffX       = 90. deg
+d:So/Example/BeamAngularCutoffY       = 90. deg
+d:So/Example/BeamAngularSpreadX       = 0.0032 rad
+d:So/Example/BeamAngularSpreadY       = 0.0032 rad
+i:So/Example/NumberOfHistoriesInRun   = 2000
+
+s:Ge/BeamPosition/Parent="World"
+s:Ge/BeamPosition/Type="Group"
+d:Ge/BeamPosition/TransX=0. m
+d:Ge/BeamPosition/TransY=0. m
+d:Ge/BeamPosition/TransZ= Ge/World/HLZ + 0.1 m
+d:Ge/BeamPosition/RotX=180. deg
+d:Ge/BeamPosition/RotY=0. deg
+d:Ge/BeamPosition/RotZ=0. deg

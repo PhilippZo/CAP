@@ -9,7 +9,7 @@ import pandas as pd
 dcm_data = pydicom.dcmread('../../DoseCTV.dcm')
 #df  = pd.read_csv("../../DoseCTV.csv", header = None)
 
-scaling_factor = 100.0  # Modify this as needed
+#scaling_factor = 100.0 
 
 print("Dose Scaling: ", dcm_data.DoseGridScaling)
 print(np.max(dcm_data.pixel_array[:]))
@@ -18,7 +18,7 @@ print(np.max(dcm_data.pixel_array[:]))
 #dcm_data.pixel_array[:] = dcm_data.pixel_array * scaling_factor
 
 # Adjust the DoseGridScaling value
-dcm_data.DoseGridScaling = dcm_data.DoseGridScaling *1000000
+dcm_data.DoseGridScaling = dcm_data.DoseGridScaling *100000000*60/476.047
 
 print("Dose Scaling: ", dcm_data.DoseGridScaling)
 
@@ -29,3 +29,5 @@ dcm_data.add_new((0x3004, 0x0002), 'CS', 'GY')
 dcm_data.save_as('../../data/CT/DicomDaten/Dose.dcm')
 
 
+# erstens: maximal dosis weit über 107%
+# zweitens: abdeckun sollte nach klnischem anspruch mind 95% sein. hier nur 40

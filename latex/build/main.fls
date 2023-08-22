@@ -468,6 +468,10 @@ INPUT build/main.toc
 OUTPUT build/main.toc
 INPUT ./content/task1.tex
 INPUT ./content/task1.tex
+INPUT /home/philipp/.local/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc
+INPUT ../poject/task1/task1a.pdf
+INPUT ../poject/task1/task1a.pdf
+INPUT ../poject/task1/task1a.pdf
 INPUT build/main.aux
 INPUT build/main.aux
 INPUT build/main.toc

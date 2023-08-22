@@ -1,9 +1,9 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'build/main.blg'
-[49] biber:340> INFO - === Di Aug  1, 2023, 15:12:33
-[60] Biber.pm:415> INFO - Reading 'build/main.bcf'
-[109] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
-[113] Utils.pm:395> WARN - The file 'build/main.bcf' does not contain any citations!
-[120] bbl.pm:654> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[121] bbl.pm:757> INFO - Output to build/main.bbl
-[121] Biber.pm:128> INFO - WARNINGS: 1
+[46] biber:340> INFO - === Di Aug 22, 2023, 11:05:17
+[56] Biber.pm:415> INFO - Reading 'build/main.bcf'
+[101] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[105] Utils.pm:395> WARN - The file 'build/main.bcf' does not contain any citations!
+[110] bbl.pm:654> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[110] bbl.pm:757> INFO - Output to build/main.bbl
+[110] Biber.pm:128> INFO - WARNINGS: 1
