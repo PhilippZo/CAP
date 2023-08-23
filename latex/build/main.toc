@@ -5,5 +5,8 @@
 \contentsline {section}{\numberline {2}Aufgabe 2}{5}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Aufgabe 2 a)}{5}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Aufgabe 2 b)}{6}{subsection.2.2}%
-\contentsline {section}{Appendices}{7}{section*.6}%
+\contentsline {section}{\numberline {3}Aufgabe 3}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Aufgabe 3 a)}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Aufgabe 3 b)}{7}{subsection.3.2}%
+\contentsline {section}{Appendices}{8}{section*.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
