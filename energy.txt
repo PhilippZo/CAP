@@ -61,7 +61,7 @@ s:Ge/col/Type = "TsCylinder"
 d:Ge/col/TransY = Ge/BeamPosition/TransY m 
 d:Ge/col/TransZ = 20 cm
 d:Ge/col/HL = 10 cm
-d:Ge/col/RMin = 3.2 cm
+d:Ge/col/RMin = 3.0 cm
 d:Ge/col/RMax = 40 cm
 
 #kolli
