@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt 
 import pandas as pd 
 
-df = pd.read_csv("../../DVH.csv", header = 1)
+df = pd.read_csv("test.csv", header = 1)
 dvh = np.array(df)
 
 
