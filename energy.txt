@@ -177,7 +177,7 @@ d:So/Example/BeamAngularCutoffX       = 90. deg
 d:So/Example/BeamAngularCutoffY       = 90. deg
 d:So/Example/BeamAngularSpreadX       = 0.0032 rad
 d:So/Example/BeamAngularSpreadY       = 0.0032 rad
-i:So/Example/NumberOfHistoriesInRun   = 100000 * Tf/histories/Value
+i:So/Example/NumberOfHistoriesInRun   = 1000000 * Tf/histories/Value
 	
 s:Ge/BeamPosition/Parent="World"
 s:Ge/BeamPosition/Type="Group"

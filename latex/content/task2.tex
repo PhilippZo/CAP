@@ -1,10 +1,11 @@
 \section{Aufgabe 2}
 \subsection{Aufgabe 2 a)}
-Um den gegeben CT Datensatz zu bestrahlen wir ein Protonenstahl mit einer Energie von 150\si{MeV} gewählt.
 Die Grundlegenden Einstellungen, bzw Parameter werden aus der Aufgabe 1 kopiert und können der beiliegenden $.txt$ Datei entnommen wernden.
-Um der \enquote{Pencil Beam Scanning Methode} gerecht zu werden, wird der Strahl in 8 Zeitschritten
-konzentrisch um den Mittelpunkt des CTV Zylinders um die Z-Achse verschoben. 
+Um der \enquote{Pencil Beam Scanning Methode} gerecht zu werden, wird der Strahl in 11 Zeitschritten
+auf den Mittelpunkt des CTV Zylinders mit je verschiedenen Energien $\left( 140, 145,...,190, 195 \right)$. 
 Hierbei wird darauf geachtet, inerhalb des Zylinders zu agieren um die umliegenden OAR nicht unnötiger Strahlung, bei homogener Dosis im CTV, auszusetzen. 
+Ein Aufbau von: \newpage Keil \to Streufolie \to Streufolie \to Streufolie \to Kollimator weitet den Strahl auf, wobei die Kollimatoren für laterale 
+Sicherheit sorgen. Die Reichweitenmoulierung findet durch die verschiedenen Energien statt.
 \begin{figure}
     \centering
     \includegraphics[width= 0.8\textwidth]{content/iso.png}
@@ -13,9 +14,9 @@ Hierbei wird darauf geachtet, inerhalb des Zylinders zu agieren um die umliegend
     \label{fig:iso}
 \end{figure}
 Mit dem Simulationswekzeug von \enquote{TOPAS} werden so mehrer Protonen an entsprechender Stelle simuliert wobei die Teilchenanzahl in einer Größenordnung 
-von insgesamt $10^7$ liegt. So werden statistische Fehler minimiert. Die deponierte Dosis kann in \enquote{Slicer3D} ausgelesen,
+von insgesamt $10^8$ liegt. So werden statistische Fehler minimiert. Die deponierte Dosis kann in \enquote{Slicer3D} ausgelesen,
 und anschließend durch DICOM manipulation durch den Tag $(3004, 000E)$ auf die gewünschten $60 Gy$ skaliert werden. 
-Durch Hinzufügen des Tags (3004, 0002) kann wahlweise noch die Information \enquote{Gy} beigegeben werden.
+Durch Hinzufügen des Tags (3004, 0002) wird wahlweise noch die Information \enquote{Gy} beigegeben.
 
 \subsection{Aufgabe 2 b)}
 Der Abbildung \ref{fig:slicer} ist eine mittlere Dosis von $60 Gy$ zu entnehmen. Die Grafik \ref{fig:dvh} verdeutlich zudem die 
