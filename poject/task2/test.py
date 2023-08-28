@@ -17,7 +17,7 @@ print(np.max(dcm_data.pixel_array[:]))
 #dcm_data.pixel_array[:] = dcm_data.pixel_array * scaling_factor
 
 # Adjust the DoseGridScaling value
-dcm_data.DoseGridScaling = dcm_data.DoseGridScaling *100000000*60*60/(476.047*348)
+dcm_data.DoseGridScaling = dcm_data.DoseGridScaling /65*60 / 45*60 /76*60/96*60*40000000*60*60/(476.047*348)
 
 print("Dose Scaling: ", dcm_data.DoseGridScaling)
 

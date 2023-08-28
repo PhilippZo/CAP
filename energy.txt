@@ -24,34 +24,55 @@ d:Ge/World/HLX         = 1 m
 d:Ge/World/HLY         = 1 m
 d:Ge/World/HLZ         = 1 m
 
-#scatter foil
+#scatter foil 1
 s:Ge/scatter/parent = "World"
-s:Ge/scatter/Material = "Copper"
+s:Ge/scatter/Material = "Lead"
 s:Ge/scatter/Type = "TsBox"
-d:Ge/scatter/TransZ = 50 cm
-d:Ge/scatter/HLX = 50 cm 
+d:Ge/scatter/TransZ = 70 cm
+d:Ge/scatter/HLX = 50 cm
 d:Ge/scatter/HLY = 50 cm
 d:Ge/scatter/HLZ = 0.08 cm
+
+
+#scatter foil 2
+s:Ge/scatter2/parent = "World"
+s:Ge/scatter2/Material = "Lead"
+s:Ge/scatter2/Type = "TsBox"
+d:Ge/scatter2/TransZ = 40 cm
+d:Ge/scatter2/HLX = 50 cm 
+d:Ge/scatter2/HLY = 50 cm
+d:Ge/scatter2/HLZ = 0.08 cm
+
+#scatter foil 2
+s:Ge/scatter3/parent = "World"
+s:Ge/scatter3/Material = "Lead"
+s:Ge/scatter3/Type = "TsBox"
+d:Ge/scatter3/TransZ = 90 cm
+d:Ge/scatter3/HLX = 50 cm
+d:Ge/scatter3/HLY = 50 cm
+d:Ge/scatter3/HLZ = 0.08 cm
+
+
 
 #kolli
 s:Ge/col/parent = "World"
 s:Ge/col/Material = "Copper"
 s:Ge/col/Type = "TsCylinder"
 d:Ge/col/TransY = Ge/BeamPosition/TransY m 
-d:Ge/col/TransZ = 5.5 cm
-d:Ge/col/HL = 1 cm
-d:Ge/col/RMin = 3 	 cm
+d:Ge/col/TransZ = 20 cm
+d:Ge/col/HL = 10 cm
+d:Ge/col/RMin = 3.2 cm
 d:Ge/col/RMax = 40 cm
 
 #kolli
-s:Ge/col2/parent = "World"
-s:Ge/col2/Material = "Copper"
-s:Ge/col2/Type = "TsCylinder"
-d:Ge/col2/TransY = Ge/BeamPosition/TransY m
-d:Ge/col2/TransZ = 10 cm
-d:Ge/col2/HL = 2 cm
-d:Ge/col2/RMin = 3 cm
-d:Ge/col2/RMax = 20 cm
+#s:Ge/col2/parent = "World"
+#s:Ge/col2/Material = "Copper"
+#s:Ge/col2/Type = "TsCylinder"
+#d:Ge/col2/TransY = Ge/BeamPosition/TransY m
+#d:Ge/col2/TransZ = 10 cm
+#d:Ge/col2/HL = 2 cm
+#d:Ge/col2/RMin = 3 cm
+#d:Ge/col2/RMax = 20 cm
 
 #Cone
 s:Ge/DemoHPolycone/Type              = "G4HPolycone"
@@ -65,10 +86,9 @@ d:Ge/DemoHPolycone/RotY              = 0 deg
 d:Ge/DemoHPolycone/RotZ              = 180 deg
 #d:Ge/DemoHPolycone/PhiStart          = 0.25 rad
 #d:Ge/DemoHPolycone/PhiTotal          = 1.5 rad
-dv:Ge/DemoHPolycone/RInner           = 2 0 0 cm
-dv:Ge/DemoHPolycone/ROuter           = 2 0 5 cm
-dv:Ge/DemoHPolycone/Z                = 2 0 0.4 cm
-
+dv:Ge/DemoHPolycone/RInner           = 4 0  0 0 0 cm
+dv:Ge/DemoHPolycone/ROuter           = 4 0.5 2.4 2.4 0 cm
+dv:Ge/DemoHPolycone/Z                = 4 0   1.8 2   3 cm
 
 
 
@@ -115,31 +135,36 @@ u:Gr/BasicViewA/Zoom             = 3
 i:Gr/ShowOnlyOutlineIfVoxelCountExceeds = 5000
 
 s:Tf/Energy/Function = "Linear MeV"
-d:Tf/Energy/Rate = 10 MeV/ms
+d:Tf/Energy/Rate = 5 MeV/ms
 d:Tf/Energy/StartValue = 0.0 MeV
 
-s:Tf/Energy1/Function = "step"
-dv:Tf/Energy1/Times = 10 1 2 3 4 5 6 7 8 9 10 ms
-iv:Tf/Energy1/Values = 10 10 20 30 40 50 60 70 80 90 100 
-
-#dv:Tf/Energy/Times =s:Tf/Energy/Function = "Linear MeV"
-#d:Tf/Energy/Rate = 1 MeV/ms
-#d:Tf/Energy/StartValue = 0.0 MeV
+s:Tf/mult/Function = "Linear"
+d:Tf/mult/Rate = 1.2 1/ms
+u:Tf/mult/StartValue = 1
 
 #10 0 1 2 3 4 5 6 7 8 9 ms
 #dv:Tf/Energy/Values = 10 10 20 30 40 50 60 70 80 90 100 MeV
 
 d:Tf/TimelineStart = 0. ms
-d:Tf/TimelineEnd = 10. ms
-i:Tf/NumberOfSequentialTimes = 10
+d:Tf/TimelineEnd = 11. ms
+i:Tf/NumberOfSequentialTimes = 11
 i:Tf/Vebosity = 2
+
+s:Tf/sin/Function = "Cosine"
+d:Tf/sin/RepitionInterval = Tf/TimelineEnd ms 
+d:Tf/sin/Rate = 16.3636  deg/ms
+d:Tf/sin/StartValue = 20 deg
+
+u:Tf/sq/Value = Tf/sin/value * Tf/sin/value
+u:Tf/fuck/Value =  Tf/mult/value * Tf/sq/Value
+u:Tf/histories/Value = Tf/fuck/Value * 4	
 
 
 #Source
 s:So/Example/Type                     = "Beam"
 s:So/Example/Component                = "BeamPosition"
 s:So/Example/BeamParticle             = "proton"
-d:So/Example/BeamEnergy               =  60 MeV + Tf/Energy/value
+d:So/Example/BeamEnergy               =  140 MeV + Tf/Energy/value
 u:So/Example/BeamEnergySpread         = 0.757504
 s:So/Example/BeamPositionDistribution = "Gaussian"
 s:So/Example/BeamPositionCutoffShape  = "Ellipse"
@@ -152,8 +177,8 @@ d:So/Example/BeamAngularCutoffX       = 90. deg
 d:So/Example/BeamAngularCutoffY       = 90. deg
 d:So/Example/BeamAngularSpreadX       = 0.0032 rad
 d:So/Example/BeamAngularSpreadY       = 0.0032 rad
-i:So/Example/NumberOfHistoriesInRun   = 30000 * tf/Energy1/value
-
+i:So/Example/NumberOfHistoriesInRun   = 100000 * Tf/histories/Value
+	
 s:Ge/BeamPosition/Parent="World"
 s:Ge/BeamPosition/Type="Group"
 d:Ge/BeamPosition/TransX=0.0 m 
