@@ -1,0 +1,5 @@
+Structure,Volume (cc),Mean dose (GY),Min dose (GY),Max dose (GY)
+CTV_Zylinder,143.226,60,51.3977,65.2158
+OAR1,97.684,1.54798,0,39.3161
+OAR2,97.684,1.55315,0,39.1533
+External,1614.4,12.4789,0,65.2158

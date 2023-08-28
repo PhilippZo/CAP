@@ -1,15 +1,15 @@
 #task 2 file for topas 
 
 #DEFAULTS
-b:Gr/Enable = "False"
-#Ts/UseQT = "True"
-#b:Ts/PauseBeforeSequence = "True"
+#b:Gr/Enable = "False"
+Ts/UseQT = "True"
+b:Ts/PauseBeforeSequence = "True"
 #b:Ts/PauseBeforeQuit = "True"
 i:Ts/Seed = 1
 i:Ts/MaxInterruptedHistories = 1000000
 i:Ts/ShowHistoryCountAtInterval = 20000 
 i:Ts/NumberOfThreads = 0
-
+b:Ge/World/Invisible = "True"
 
 #PHYSIC MODULS
 #sv:Ph/Default/Modules = 1 "Transportation_Only"
@@ -191,7 +191,7 @@ d:Ge/BeamPosition/RotZ=0. deg
 
 #Scorer
 
-#Scorer 1: CTV
+##Scorer 1: CTV
 s:Sc/DoseCTV/Quantity                  = "DoseToMedium"
 s:Sc/DoseCTV/Component                 = "Patient"
 s:Sc/DoseCTV/IfOutputFileAlreadyExists = "Overwrite"
